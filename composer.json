@@ -1,0 +1,33 @@
+{
+    "name": "rivsen/laravel-cron",
+    "description": "Generate crontab file from configured commands",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rivsen Duan",
+            "email": "Rivsen@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rswork\\Laravel\\Cron\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.1",
+        "illuminate/console": "~5.1",
+        "laravel/framework": "~5.1"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Rswork\\Laravel\\Cron\\CronGeneratorServiceProvider"
+            ]
+        }
+    }
+}
