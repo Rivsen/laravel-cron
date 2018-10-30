@@ -17,7 +17,7 @@ class CronGeneratorServiceProvider extends ServiceProvider
             return new GenerateCrontabCommand();
         });
 
-        //$this->commands(['cron:generate']);
+        $this->commands('rswork.cron.generate');
     }
 
     /**
